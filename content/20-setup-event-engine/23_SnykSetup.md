@@ -5,10 +5,10 @@ weight: 23
 ---
 
 # Snyk Setup Instructions
-You will need a Snyk account to run scans as defined in the prerequisites for this workshop.
+You will need a Snyk account to run scans as defined in the prerequisites for this workshop. If you do not have a Snyk account, you can sign up for one [here](https://app.snyk.io/login)
 
 ## Create Snyk Access Token
-- Visit your Snyk account (Account Settings > API Token section) (https://app.snyk.io/account)
+- Visit your Snyk account (Account Settings > API Token section) [here](https://app.snyk.io/account)
 - In the KEY field, select click to show, then select and copy your API token from the field
 - Paste the token that appears on the screen in a safe location for use in future modules
 
@@ -25,7 +25,7 @@ You can read more about Snyk Access Token from their [docs here](https://docs.sn
 The Snyk Command-Line-Interface (CLI) is highly portable and very popular with end users.  We’ll use the Snyk CLI in this workshop to collect and send results about your vulnerabilities.
 
 Start by downloading the Snyk CLI to your environment.  In this workshop, we’ll prescribe steps to save time and you can find more details on the Snyk documentation site at:
-https://docs.snyk.io/snyk-cli/install-the-snyk-cli
+https://docs.snyk.io/snyk-cli/install-or-update-the-snyk-cli
 
 At the Cloud9 prompt, enter these commands to download the binary for Linux and move them to your bin folder (/usr/local/bin):
 
