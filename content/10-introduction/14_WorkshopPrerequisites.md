@@ -17,3 +17,6 @@ Your Snyk account allows you to scan your code to see results locally or on the 
 
 ## Atlassian Bitbucket Cloud
 Your Atlassian Bitbucket Cloud account gives you a place to store your repository and create your working pipeline.  In this workshop, we will use both as part of a CI/CD pipeline.
+
+## Jira Account + Jira Project with Jira Global Admin Permissions
+We recommend creating a Jira Account and Jira software style project for this demo. You can sign up for a Jira account [here](https://www.atlassian.com/software/jira)

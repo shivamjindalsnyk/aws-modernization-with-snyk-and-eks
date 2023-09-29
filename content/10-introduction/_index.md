@@ -38,16 +38,10 @@ We'll integrate your repository and Amazon ECR into Snyk to gain visibility of y
 
 ## Module 3 - Integrate with Security in Jira
 
-We'll propagate a fix and observe the results in Amazon ECR.  This entails opening a Fix PR for review in Bitbucket.
+We'll integrate with Security in Jira to enable developers to view and track security vulnerabilities directly within Jira.
 
 
 ## Module 4 - Fix and Verify with Snyk
 
 We'll propagate a fix and observe the results in Amazon ECR.  This entails opening a Fix PR for review in Bitbucket.
 
-
-## Module 4 - Extra Credit
-
-Introduce Snyk Monitor in your CI/CD pipeline. 
-Introduce the Snyk Kubernetes integration.
-Open-ended tests and experimentation
