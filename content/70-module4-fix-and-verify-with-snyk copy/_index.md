@@ -1,7 +1,7 @@
 +++
-title = "Module 3: Fix and Verify with Snyk"
+title = "Module 4: Fix and Verify with Snyk"
 chapter = true
-weight = 60
+weight = 70
 +++
 
 # Introduction

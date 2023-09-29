@@ -345,4 +345,4 @@ Debian 9 is no longer supported by the Debian maintainers. Vulnerability detecti
 
 We omitted the use case for Snyk in popular IDEs.  This is an example covered in many other assets, and the general experience is you and your team can see the results of security scans in their favorite environments, including guidance and remediation.
 
-Until now, you have been given information.  Sometimes teams start their application security journey by first seeing the results of scans, and trying to make sense of the information.  Our goal was to help set some context about _what_ you are seeing and _why_.  In the next section, we'll start to show you how you can make changes to address these vulnerability issues.
+Until now, you have been given information.  Sometimes teams start their application security journey by first seeing the results of scans, and trying to make sense of the information.  Our goal was to help set some context about _what_ you are seeing and _why_.  In the next section, we'll show how you can integrate with Jira to view Snyk related data within the Security in Jira tab. 

@@ -36,7 +36,12 @@ We'll fork a public repository and configure its Bitbucket Pipeline to deploy yo
 
 We'll integrate your repository and Amazon ECR into Snyk to gain visibility of your code, open-source dependencies, and containers.  
 
-## Module 3 - Fix and Verify with Snyk
+## Module 3 - Integrate with Security in Jira
+
+We'll propagate a fix and observe the results in Amazon ECR.  This entails opening a Fix PR for review in Bitbucket.
+
+
+## Module 4 - Fix and Verify with Snyk
 
 We'll propagate a fix and observe the results in Amazon ECR.  This entails opening a Fix PR for review in Bitbucket.
 
