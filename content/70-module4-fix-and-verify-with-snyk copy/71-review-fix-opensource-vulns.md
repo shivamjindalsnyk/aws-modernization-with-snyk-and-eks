@@ -1,7 +1,7 @@
 ---
 title: "Review and Fix Open Source Vulnerabilities in Snyk"
 chapter: true
-weight: 61
+weight: 71
 ---
 
 # Overview

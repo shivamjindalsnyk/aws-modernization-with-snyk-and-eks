@@ -17,7 +17,7 @@ integrate with multiple registries, create a unique Snyk organization for each r
 
 From the Snyk console, navigate to __Settings__ and under the __General__ menu `Copy` your __Organization ID__.
 
-![Snyk Organization ID](../images/snyk-api-token.png)
+![Snyk Organization ID](/images/snyk-api-token.png)
 
 ## Step 1: Enable the integration
 
@@ -28,7 +28,7 @@ Your instructor will also provide additional context and explanation.
 
 Start by navigating to Snyk and your organization's Integrations page.   Here we show a filtered view for "ecr".
 
-![Snyk ECR Integration](../images/aws-ecr-integration.png)
+![Snyk ECR Integration](/images/aws-ecr-integration.png)
 
 Clicking into the tile takes you to a page with two fields to fill in, and instructions on what to do.
 
@@ -114,18 +114,18 @@ Notice how the value shifts to an array format from before.
 Once you are finished with creating the hardened IAM Role that uses the IAM Policy, you will have access to the ARN for the role.  Copy that value to the Snyk UI and save your configuration.
 
 You'll see a banner announcing the integration is successful.
-![Snyk ECR Success](../images/aws-ecr-integration-success.png)
+![Snyk ECR Success](/images/aws-ecr-integration-success.png)
 
 
 ## Step 6: Add ECR images to Snyk
 
 Click on the button to add your ECR images to Snyk to enable their scanning withing Snyk.
 
-![Snyk Add Images](../images/aws-ecr-add-images.png)
+![Snyk Add Images](/images/aws-ecr-add-images.png)
 
 Within a few moments, your images will be imported as projects and we can review the results.  This view is especially helpful when working across a team, given the shared visibility into the images.  You will see entries for both the image, as well as the embedded open-source package.  This is handy for seeing both in the same context.
 
-![Snyk ECR projects](../images/aws-ecr-snyk-projects.png)
+![Snyk ECR projects](/images/aws-ecr-snyk-projects.png)
 
 Your instructor will walk you though the contents with some explanations.  Later, you will see how to remediate vulnerabilities.
 

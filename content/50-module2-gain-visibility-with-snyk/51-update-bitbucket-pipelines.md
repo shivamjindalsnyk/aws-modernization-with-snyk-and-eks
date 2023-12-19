@@ -43,9 +43,9 @@ pipelines:
     - <<: *scan-push-image
 ```
 
-### Step 3 - Add Snyk scanning of open source
+### Step 3 - Add Snyk scanning of container images
 
-Finally, uncomment the section to scan dockerfile defintions.
+Finally, uncomment the section to scan docker image.
 
 ```
 scan-push-image: &scan-push-image

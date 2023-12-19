@@ -22,19 +22,20 @@ Navigate to the Cloud9 console or just search for it under the AWS console servi
 
 Click the Create environment button, and use the name use sh-workshop, then click Next step.
 
-![aws-cloud9-step-1](/images/aws-cloud9-1.png)
+![aws-cloud9-step-1](../images/aws-cloud9-1.png)
 
 In the configuration screens, 
 - Select the default instance type `t2.micro`
 - Leave all the other settings as default and click Next
 
-![aws-cloud9-step-1](/images/aws-setup-cloud9.png)
+<!-- ![aws-cloud9-step-2](../images/aws-setup-cloud9.png) -->
+![aws-cloud9-step-2](../images/aws-cloud9-2.png)
 
 Verify your selections and press the button to **Create environment**.
 
 Info: This will take about 1-2 minutes to provision
 
-![aws-cloud9-step-3](/images/aws-cloud9-3.png)
+![aws-cloud9-step-3](../images/aws-cloud9-3.png)
 
 ### Configure Cloud9 IDE environment
 
@@ -43,7 +44,7 @@ Once your Cloud9 environment is running, customize by:
 1. Close the lower work area tab
 1. Open a new terminal tab in the main work area.
 
-![aws-cloud9-step-3](/images/aws-cloud9-4.png)
+![aws-cloud9-step-3](../images/aws-cloud9-4.png)
 
 Tip: You are free to customize the look and feel of your environment, including the color scheme.
 

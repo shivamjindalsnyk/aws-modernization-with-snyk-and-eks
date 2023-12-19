@@ -91,6 +91,6 @@ url = "https://snyk.awsworkshop.io/"
 weight = 21
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
+  defaultMarkdownHandler = "goldmark"
   [markup.blackFriday]
     hrefTargetBlank = true

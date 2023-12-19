@@ -1,8 +1,12 @@
----
-title: "Snyk CLI"
-chapter: true
-weight: 23
----
++++
+title = "Set Up Snyk in Cloud9"
+chapter = false
+weight = 36
++++
+
+{{% notice note %}}
+This section is for users running in their own environment.  If you are at an AWS event where the AWS Event Engine is being used, then please __DO NOT COMPLETE__ these steps and __skip__ to [**Creating an Amazon ECR repository**]({{< ref "#creating-an-amazon-ecr-repository" >}}).
+{{% /notice %}}
 
 # Snyk Setup Instructions
 You will need a Snyk account to run scans as defined in the prerequisites for this workshop. If you do not have a Snyk account, you can sign up for one [here](https://app.snyk.io/login)
@@ -62,4 +66,5 @@ In this case, you'll authenticate by logging on with the web UI of Snyk.
 
 ### Next Section: Running the workshop.
 Great, you have created and safely stored your newly created Snyk access token.  Let's get moving with the workshop.
+
 

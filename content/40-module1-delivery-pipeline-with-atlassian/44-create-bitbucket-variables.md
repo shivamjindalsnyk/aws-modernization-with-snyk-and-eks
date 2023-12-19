@@ -21,10 +21,10 @@ Under Repository Settings -> Pipelines, select Repository Variables. Create the 
 1. AWS region you will be deploying to: `AWS_DEFAULT_REGION` with the value of `us-east-1`
 1. Container image name: `IMAGE` with the value of "goof".  This name needs to match the name of your ECR.
 1. The URI to your AWS ECR: `AWS_ECR_URI`.  We use this for the deployment to EKS.
-1. (OPTIONAL) Amazon EKS name of your cluster: `AWS_EKS_CLUSTER` if you have configured it in a previous step.
+
 
 This screenshot shows those repository variables:
-![Repository Variables](/images/bitbucket-repo-vars.png)
+![Repository Variables](../images/bitbucket-repo-vars.png)
 
 {{% notice tip %}}
 It is recommended that you use [Snyk Service accounts](https://support.snyk.io/hc/en-us/articles/360004037597-Service-accounts) and [AWS IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) when creating accounts.
