@@ -13,7 +13,7 @@ We'll need to setup the following:
 - Atlassian Bitbucket Cloud with Bitbucket Pipelines
 
 ## Snyk Account and Snyk CLI
-Your Snyk account allows you to scan your code to see results locally or on the Snyk website.  In this workshop we'll use both the CLI and Website.  You have the additional options of running Snyk within popular IDEs or programmatically with API calls, but those are not covered in this workshop.
+Your Snyk account allows you to scan your code to see results locally or on the Snyk website.  In this workshop we'll use both the CLI and Website.  You have the additional options of running Snyk within popular IDEs or programmatically with API calls, but those are not covered in this workshop. You can sign up for a Snyk account [here](https://snyk.io/)
 
 ## Atlassian Bitbucket Cloud
 Your Atlassian Bitbucket Cloud account gives you a place to store your repository and create your working pipeline.  In this workshop, we will use both as part of a CI/CD pipeline.

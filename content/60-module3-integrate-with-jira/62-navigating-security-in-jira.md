@@ -35,3 +35,9 @@ After the installation and configuration of the Snyk Security in Jira Cloud app,
 
 If a Jira issue already exists for a vulnerability, link the vulnerability to the existing Jira issue.
 Click the three dots in the Actions column next to the vulnerability and select Link issue.
+
+# Next steps
+
+We've now scanned a repository locally with the CLI, in the SCM with our BitBucket integration,  scanned before deployment with BitBucket pipelines, and shown the scan results directly to our dev teams under the Security in Jira tab. 
+
+We know about our vulnerabiltiies through each step of the process from code being first written in the IDEs to when its just about to be deployed into cloud environments! Now let's see how we can make use of Snyk results to actually remediate the vulnerabilities. 

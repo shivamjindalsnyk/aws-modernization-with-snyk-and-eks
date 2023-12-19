@@ -13,6 +13,8 @@ Navigate to your Jira Project you want to enable and go to Project Settings > Fe
 
 
 ### Step 2 - Install the Snyk for Jira App
+**Note: You need to be a global Jira admin for this**
+
 Navigate to the Jira Project you enabled with Security and find the new Security tab in the left side. There, click "Connect Tool" > Snyk > "Get It Now". 
 
 Alternatively: You can also navigate to Apps > Find New Apps > Search for "Snyk Security in Jira Cloud. Then Click the app and select "Get it Now"
