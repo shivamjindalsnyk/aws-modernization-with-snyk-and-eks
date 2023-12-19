@@ -13,7 +13,7 @@ After the installation and configuration of the Snyk Security in Jira Cloud app,
 2. Snyk displays the severity, status, and identifiers of the vulnerabilities.
 3. Click on the title to open the details in Snyk Web UI.
 
-![View Issues in Security in Jira](../images/view-issues-jira.png)
+![View Issues in Security in Jira](/images/view-issues-jira.png)
 
 
 ## Searching, Filtering, and Sorting Vulnerabilities:
@@ -29,7 +29,7 @@ After the installation and configuration of the Snyk Security in Jira Cloud app,
 2. Navigate to the Snyk Security tab, find a vulnerability, and click Create issue.
 3. Snyk provides comprehensive vulnerability information to Jira, aiding users in resolving issues.
 
-![Create Issues in Security in Jira](../images/sij-create-issue.png)
+![Create Issues in Security in Jira](/images/sij-create-issue.png)
 
 ## Linking an Existing Jira Issue to a Vulnerability:
 
