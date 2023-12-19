@@ -6,7 +6,8 @@ weight: 99
 
 # You did it!
 
-![Snyk Bitbucket Flow](../images/snyk-conclusion.png)
+![Snyk Bitbucket Flow](images/snyk-conclusion.png)
+
 
 __S__ o __N__ ow __Y__ ou __K__ now that finding potential vulnerabilities in your applications is not something to dread. 
 You have the tools at your disposal. You have the _know how_! It's time to take _ownership_ and seamlessly integrate __security__ into your
