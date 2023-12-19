@@ -47,5 +47,11 @@ Click to create the new user:
 Take note of the login URL and save:
 ![Login URL](../images/iam-4-save-url.png)
 
+Make note of your user's ARN, as you will need it later.  The ARN is of this format:
+
+```
+arn:aws:iam::157339908627:user/marco
+```
+
 ## Proceed to Getting Started
 Once you have completed the step above, you can leave the AWS console open.  Continue to follow the instructions of your facilitator, or the next page if you are running standalone.

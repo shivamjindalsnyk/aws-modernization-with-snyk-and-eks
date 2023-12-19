@@ -241,59 +241,60 @@ This view is handy to see your transitive dependencies.
 Next, let's look at the scan results for your containers
 
 ```shell
-$ snyk container test --file=app/goof/Dockerfile node:6-stretch
+$ snyk container test --file=app/goof/Dockerfile node:17-stretch
 ```
 
 At the time of this workshop, there were over 1000 issues, so let's filter this down so it is easier to see.
 
 ```shell
-$ snyk container test --file=app/goof/Dockerfile node:6-stretch --severity-threshold=critical
+$ snyk container test --file=Dockerfile node:17-stretch --severity-threshold=critical
 
-Testing node:6-stretch...
+Testing node:17-stretch...
 
-✗ Critical severity vulnerability found in shadow/passwd
-  Description: Out-of-Bounds
-  Info: https://security.snyk.io/vuln/SNYK-DEBIAN9-SHADOW-306269
-  Introduced through: meta-common-packages@meta, shadow/login@1:4.4-4.1
-  From: meta-common-packages@meta > shadow/passwd@1:4.4-4.1
-  From: shadow/login@1:4.4-4.1
-  Image layer: Introduced by your base image (node:6-stretch)
-  Fixed in: 1:4.4-4.1+deb9u1
+✗ Critical severity vulnerability found in openssl/libssl1.1
+  Description: OS Command Injection
+  Info: https://security.snyk.io/vuln/SNYK-DEBIAN9-OPENSSL-2933517
+  Introduced through: openssl/libssl-dev@1.1.0l-1~deb9u6, ca-certificates@20200601~deb9u2, libevent/libevent-dev@2.0.21-stable-3, postgresql-9.6/libpq-dev@9.6.24-0+deb9u1, python3.5@3.5.3-1+deb9u5, subversion@1.9.5-1+deb9u6, bzr@2.7.0+bzr6619-7+deb9u1
+  From: openssl/libssl-dev@1.1.0l-1~deb9u6 > openssl/libssl1.1@1.1.0l-1~deb9u6
+  From: ca-certificates@20200601~deb9u2 > openssl@1.1.0l-1~deb9u6 > openssl/libssl1.1@1.1.0l-1~deb9u6
+  From: libevent/libevent-dev@2.0.21-stable-3 > libevent/libevent-openssl-2.0-5@2.0.21-stable-3 > openssl/libssl1.1@1.1.0l-1~deb9u6
+  and 7 more...
+  Image layer: Introduced by your base image (node:17-stretch)
 
-✗ Critical severity vulnerability found in python3.5/libpython3.5-stdlib
-  Description: Buffer Overflow
-  Info: https://security.snyk.io/vuln/SNYK-DEBIAN9-PYTHON35-1063181
-  Introduced through: python3.5/libpython3.5-stdlib@3.5.3-1+deb9u1, python3-defaults/libpython3-stdlib@3.5.3-1, python3.5@3.5.3-1+deb9u1, python3.5/python3.5-minimal@3.5.3-1+deb9u1, python3-defaults/python3@3.5.3-1, python3.5/libpython3.5-minimal@3.5.3-1+deb9u1
-  From: python3.5/libpython3.5-stdlib@3.5.3-1+deb9u1
-  From: python3-defaults/libpython3-stdlib@3.5.3-1 > python3.5/libpython3.5-stdlib@3.5.3-1+deb9u1
-  From: python3.5@3.5.3-1+deb9u1 > python3.5/libpython3.5-stdlib@3.5.3-1+deb9u1
-  and 8 more...
-  Image layer: Introduced by your base image (node:6-stretch)
-  Fixed in: 3.5.3-1+deb9u4
+✗ Critical severity vulnerability found in openssl/libssl1.1
+  Description: Out-of-bounds Write
+  Info: https://security.snyk.io/vuln/SNYK-DEBIAN9-OPENSSL-2939638
+  Introduced through: openssl/libssl-dev@1.1.0l-1~deb9u6, ca-certificates@20200601~deb9u2, libevent/libevent-dev@2.0.21-stable-3, postgresql-9.6/libpq-dev@9.6.24-0+deb9u1, python3.5@3.5.3-1+deb9u5, subversion@1.9.5-1+deb9u6, bzr@2.7.0+bzr6619-7+deb9u1
+  From: openssl/libssl-dev@1.1.0l-1~deb9u6 > openssl/libssl1.1@1.1.0l-1~deb9u6
+  From: ca-certificates@20200601~deb9u2 > openssl@1.1.0l-1~deb9u6 > openssl/libssl1.1@1.1.0l-1~deb9u6
+  From: libevent/libevent-dev@2.0.21-stable-3 > libevent/libevent-openssl-2.0-5@2.0.21-stable-3 > openssl/libssl1.1@1.1.0l-1~deb9u6
+  and 7 more...
+  Image layer: Introduced by your base image (node:17-stretch)
 
-... LINES DELETED ...
-Organization:      marco-goof
+
+
+Organization:      shivam.jindal
 Package manager:   deb
-Target file:       app/goof/Dockerfile
+Target file:       Dockerfile
 Project name:      docker-image|node
-Docker image:      node:6-stretch
-Platform:          linux/amd64
-Base image:        node:6-stretch
+Docker image:      node:17-stretch
+Platform:          linux/arm64
+Base image:        node:17-stretch
 Licenses:          enabled
 
-Tested 413 dependencies for known issues, found 56 issues.
+Tested 407 dependencies for known issues, found 2 issues.
 
-Base Image      Vulnerabilities  Severity
-node:6-stretch  1100             56 critical, 234 high, 251 medium, 559 low
+Base Image       Vulnerabilities  Severity
+node:17-stretch  599              2 critical, 36 high, 35 medium, 526 low
 
 Recommendations for base image upgrade:
 
 Alternative image types
-Base Image                  Vulnerabilities  Severity
-node:14.21.3-bullseye-slim  43               0 critical, 0 high, 0 medium, 43 low
-node:lts-bullseye-slim      44               0 critical, 1 high, 0 medium, 43 low
-node:19.7-buster-slim       59               0 critical, 2 high, 1 medium, 56 low
-node:19.7-buster            367              0 critical, 3 high, 8 medium, 356 low
+Base Image               Vulnerabilities  Severity
+node:21.3-bullseye-slim  58               1 critical, 0 high, 0 medium, 57 low
+node:21.1-bookworm-slim  34               1 critical, 0 high, 1 medium, 32 low
+node:iron-bookworm-slim  34               1 critical, 0 high, 1 medium, 32 low
+node:iron                175              1 critical, 6 high, 11 medium, 157 low
 
 Debian 9 is no longer supported by the Debian maintainers. Vulnerability detection may be affected by a lack of security updates.
 
@@ -309,32 +310,32 @@ Learn more: https://docs.snyk.io/products/snyk-container/getting-around-the-snyk
 In this other example, we use `exclude-base-image-vulns` to limit output to only show the vulnerabilities introduced by the base image.  This is for those cases where your team wants to know the list of vulnerabilities introduced by your definitions.  In our example, we didn't introduce any, but we can see our base image has.
 
 ```shell
-$ snyk container test --file=app/goof/Dockerfile node:6-stretch --exclude-base-image-vulns
+$ snyk container test --file=Dockerfile node:17-stretch --exclude-base-image-vulns
 
-Testing node:6-stretch...
+Testing node:17-stretch...
 
-Organization:      marco-goof
+Organization:      shivam.jindal
 Package manager:   deb
-Target file:       app/goof/Dockerfile
+Target file:       Dockerfile
 Project name:      docker-image|node
-Docker image:      node:6-stretch
-Platform:          linux/amd64
-Base image:        node:6-stretch
+Docker image:      node:17-stretch
+Platform:          linux/arm64
+Base image:        node:17-stretch
 Licenses:          enabled
 
-✔ Tested 413 dependencies for known issues, no vulnerable paths found.
+✔ Tested 407 dependencies for known issues, no vulnerable paths found.
 
-Base Image      Vulnerabilities  Severity
-node:6-stretch  1100             56 critical, 234 high, 251 medium, 559 low
+Base Image       Vulnerabilities  Severity
+node:17-stretch  599              2 critical, 36 high, 35 medium, 526 low
 
 Recommendations for base image upgrade:
 
 Alternative image types
-Base Image                  Vulnerabilities  Severity
-node:14.21.3-bullseye-slim  43               0 critical, 0 high, 0 medium, 43 low
-node:lts-bullseye-slim      44               0 critical, 1 high, 0 medium, 43 low
-node:19.7-buster-slim       59               0 critical, 2 high, 1 medium, 56 low
-node:19.7-buster            367              0 critical, 3 high, 8 medium, 356 low
+Base Image               Vulnerabilities  Severity
+node:21.3-bullseye-slim  58               1 critical, 0 high, 0 medium, 57 low
+node:21.1-bookworm-slim  34               1 critical, 0 high, 1 medium, 32 low
+node:iron-bookworm-slim  34               1 critical, 0 high, 1 medium, 32 low
+node:iron                175              1 critical, 6 high, 11 medium, 157 low
 
 Debian 9 is no longer supported by the Debian maintainers. Vulnerability detection may be affected by a lack of security updates.
 ```

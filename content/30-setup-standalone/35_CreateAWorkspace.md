@@ -7,12 +7,7 @@ weight: 35
 # Set Up Your Workspace
 AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your laptop for this workshop.
 
-We will use Amazon Cloud9 to access our AWS accounts via the AWS CLI in this Workshop. There are a few steps to complete to set this up:
-
-1. Create a new Cloud9 IDE environment
-1. Create an IAM role for your workspace
-1. Attach the IAM role to your workspace
-1. Configure workshop specific requirements
+We will use Amazon Cloud9 to access our AWS accounts via the AWS CLI in this Workshop. 
 
 
 ### Create a new Cloud9 IDE environment
@@ -22,19 +17,19 @@ Navigate to the Cloud9 console or just search for it under the AWS console servi
 
 Click the Create environment button, and use the name use sh-workshop, then click Next step.
 
-![aws-cloud9-step-1](/images/aws-cloud9-1.png)
+![aws-cloud9-step-1](../images/aws-cloud9-1.png)
 
 In the configuration screens, 
 - Select the default instance type t2.micro
 - Leave all the other settings as default and click Next
 
-![aws-cloud9-step-1](/images/aws-cloud9-2.png)
+![aws-cloud9-step-1](../images/aws-cloud9-2.png)
 
 Verify your selections and press the button to **Create environment**.
 
 Info: This will take about 1-2 minutes to provision
 
-![aws-cloud9-step-3](/images/aws-cloud9-3.png)
+![aws-cloud9-step-3](../images/aws-cloud9-3.png)
 
 ### Configure Cloud9 IDE environment
 
@@ -43,7 +38,7 @@ Once your Cloud9 environment is running, customize by:
 1. Close the lower work area tab
 1. Open a new terminal tab in the main work area.
 
-![aws-cloud9-step-3](/images/aws-cloud9-4.png)
+![aws-cloud9-step-3](../images/aws-cloud9-4.png)
 
 Tip: You are free to customize the look and feel of your environment, including the color scheme.
 
